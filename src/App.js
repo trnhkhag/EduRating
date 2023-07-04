@@ -1,10 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import SchoolPage from './school';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/home';
+import School from './pages/School/school';
+import DefaultLayout from './components/Layout/DefaultLayout';
+import './styles/App.css';
 
 function App() {
   return (
-    <SchoolPage/>
+    <Router>
+      <div className='root'>
+        <Routes>
+          <Route path='/' element={<DefaultLayout><Home /></DefaultLayout>}></Route>
+          <Route path='/schools' element={<DefaultLayout><School /></DefaultLayout>}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

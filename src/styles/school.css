@@ -1,6 +1,8 @@
 .school-page {
     text-align: center;
     padding: 20px;
+    margin: 0 10%;
+    background-color: antiquewhite;
 }
   
 .school-image {
@@ -15,10 +17,16 @@
 }
   
 .comment-list li {
-    background-color: #f5f5f5;
+    text-align: left;
+    background-color: white;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    display: flex;
+}
+
+.comment-list li p {
+    padding: 0 20px;
 }
   
 form {
@@ -47,4 +55,16 @@ button {
     border-radius: 3px;
     cursor: pointer;
 }
+
+.school-name {
+    color: red;
+}
+
+.school-detail {
+    text-align: left;
+    padding: 0 20px;
+}
   
+.school-intro {
+    display: flex;
+}
