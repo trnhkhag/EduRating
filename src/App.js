@@ -4,6 +4,8 @@ import School from './pages/School/school';
 import DefaultLayout from './components/Layout/DefaultLayout';
 import './styles/App.css';
 
+// code moi
+
 function App() {
   return (
     <Router>
